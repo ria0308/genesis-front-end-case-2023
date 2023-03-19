@@ -58,6 +58,7 @@ const CoursePage = () => {
 
                                 <Video link={videoData.link}
                                        poster={videoData.previewImageLink + '/lesson-' + videoData.order + '.webp'}/>
+                                <p> You can press arrow up and down keys to control video playback speed</p>
 
                                 <h3>{data.title}: <br/> {videoData.order}. {videoData.title}</h3>
                                 <p>{parseInt(String(videoData.duration / 60))}m {videoData.duration % 60 +1}s</p>
