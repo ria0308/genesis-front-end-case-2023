@@ -49,9 +49,7 @@ Contains course info, list of all lessons in course and instruments for watching
 
 ## Additional
 ### Motivation
-I really like making websites that look good and work well, so I'm excited to apply to  
-this school. I want to learn more about front-end development, and I think this program will 
-help me build the skills I need to have a great career.
+I really like making websites that look good and work well, so I'm excited to apply to this school. I want to learn more about front-end development, and I think this program will help me build the skills I need to have a great career.
 
 ### More links
 1. [GENESIS FRONT-END SCHOOL](https://www.academy.gen.tech/front-end-school)
