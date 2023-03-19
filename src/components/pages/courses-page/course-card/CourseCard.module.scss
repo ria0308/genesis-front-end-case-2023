@@ -1,0 +1,66 @@
+@import "src/styles/colors";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+.mini-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding: 20px 15px;
+  width: 400px;
+  border-radius: 15px;
+  outline: solid $grey 1px;
+  border: none;
+  box-shadow: 8px 8px 4px $blue;
+  overflow-wrap: anywhere;
+  h3{
+    font-family: Manrope;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  p {
+    color: $grey;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+   ;
+    text-align: left;
+  }
+
+  img {
+    width: 360px;
+  }
+
+  &:enabled:hover {
+    box-shadow: 5px 4px 4px $grey;
+  }
+
+}
+.skill-list{
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 7px;
+}
+.skill{
+  outline: solid $background-purple 3px;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .mini-card{
+    background-color: $white;
+    padding: 10px 15px;
+    width: 300px;
+    border-radius: 15px;
+    p{
+      font-family: Manrope;
+    }
+    img{
+      width: 260px;
+    }
+  }
+}

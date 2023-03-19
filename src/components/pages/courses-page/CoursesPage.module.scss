@@ -1,0 +1,45 @@
+@import "src/styles/colors";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+.page{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  gap: 25px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $background-purple;
+  padding: 50px 40px;
+}
+
+.heading{
+  display: flex;
+  align-items: center;
+  p{
+    padding: 0 8px;
+    color: $black;
+    font-weight: 700;
+    font-size: 36px;
+
+  }
+}
+.star{
+  color: $blue;
+  width: 36px;
+  height: 36px;
+}
+.courses-list{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.pagination{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}

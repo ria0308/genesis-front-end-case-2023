@@ -1,1 +1,1 @@
-export {default} from './MiniVideoCard';
+export { default } from './MiniVideoCard';

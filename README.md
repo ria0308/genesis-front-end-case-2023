@@ -1,38 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Courses 4 U
 
-## Getting Started
+This is my solution for Genesis Front-End School 2.0
 
-First, run the development server:
+## About
+### Built with
+
+
+[Next.js](https://nextjs.org/) <br> 
+[SASS](https://sass-lang.com/) <br>
+[hls.js](https://github.com/video-dev/hls.js/)<br>
+[MUI](https://mui.com/) <br>
+[Uiverse](https://uiverse.io/) 
+
+## How to install
+
+First, clone repo to your personal computer (this project can`t be deployed due to api restrctions) :
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone -link
 ```
 
+open terminal, go to folder with project and install dependencies
+
+```bash
+yarn install
+```
+
+and finaly, start the project
+
+```bash
+yarn dev
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Project logic and description
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Project consists of two pages, all courses page and course page.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Courses page:**
+Contains courses cards, page shows last 10 of them.
+Uses custom course-card component.
 
-## Learn More
+**Course page:**
+Contains course info, list of all lessons in course and instruments for watching these lessons.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Additional
+### Motivation
+I really like making websites that look good and work well, so I'm excited to apply to  
+this school. I want to learn more about front-end development, and I think this program will 
+help me build the skills I need to have a great career.
 
-## Deploy on Vercel
+### More links
+1. [GENESIS FRONT-END SCHOOL](https://www.academy.gen.tech/front-end-school)
+2. [Custom loader source on Uiverse](https://uiverse.io/Shoh2008/curly-wombat-86)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -1,4 +1,5 @@
 @import "src/styles/colors";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 .page{
   box-sizing: border-box;
@@ -14,13 +15,22 @@
   display: flex;
   align-items: center;
   p{
+    padding: 0 8px;
+    color: $black;
     font-weight: 700;
     font-size: 36px;
 
   }
 }
+.loader-wrapper{
+  display: flex;
+  height: 60vh;
+
+  justify-content: center;
+  align-items: center;
+}
 .star{
-  color: goldenrod;
+  color: $blue;
   width: 36px;
   height: 36px;
 }
@@ -35,7 +45,7 @@
 .videos-list{
   outline: solid $black 1px;
   border-radius: 10px;
-  align-items: center;
+  justify-content: left;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -43,11 +53,12 @@
   padding: 30px 12px;
   width: fit-content;
   height: fit-content;
-  p{
+  h3{
+    font-family: 'Manrope';
     font-weight: 700;
-    font-size: 24px;
-    padding-bottom: 12px;
+    font-size: 20px;
   }
+  box-shadow: 14px 14px 4px $blue;
 }
 .video{
   outline: solid $black 1px;
@@ -55,42 +66,76 @@
   padding: 12px 12px;
   display: flex;
   flex-direction: column;
-  min-width: 60%;
+  max-width: 60%;
   height: fit-content;
   background-color: $white;
   overflow-wrap: break-word;
+  box-shadow: 14px 14px 4px $blue;
+
   img{
     border-radius: 10px;
   }
-  p{
+  h3{
+    font-family: 'Manrope';
     font-weight: 700;
     font-size: 24px;
-    padding-top: 12px;
+    padding-top: 32px;
+  }
+  p{
+    color: $grey;
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 10px;
   }
 }
+.skill-list{
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 7px;
+}
+.skill{
+  outline: solid $background-purple 3px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  p{
+    padding-top: unset;
+  }
+
+}
+
 
 @media screen and (max-width: 768px){
   .page{
-    padding: 20px 10px;
+    padding: 20px 20px;
   }
   .heading{
+    padding-top: 20px;
     display: flex;
     p{
       font-weight: 700;
-      font-size: 24px;
-
+      font-size: 30px;
     }
   }
   .star{
-    color: goldenrod;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
   .video-and-video-list{
     flex-direction: column;
   }
   .video {
+    max-width: unset;
     width: 100%;
+    box-shadow: none;
+    h3{
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
   }
   .videos-list{
     outline: solid $black 1px;
@@ -100,11 +145,11 @@
     padding: 30px 12px;
     width: 100%;
     height: fit-content;
-    p{
-      font-weight: 700;
-      font-size: 20px;
+    h3{
+      font-size: 18px;
       padding-bottom: 5px;
     }
+    box-shadow: none;
   }
 
 }
